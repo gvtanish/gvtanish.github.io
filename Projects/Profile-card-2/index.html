@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.box
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	height: 500px;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+.imgBx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+	z-index: 2;
+	background: #000;
+}
+.box:hover .imgBx
+{
+	transform: translateY(-100px);
+}
+.imgBx img
+{
+	transition: 0.5s;
+}
+.box:hover .imgBx img
+{
+	opacity: 0.5;
+}
+.socail-icon
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 3;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.socail-icon li
+{
+	list-style: none;
+}
+.socail-icon li a
+{
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background: #fff;
+	color: #262626;
+	margin: 0 5px;
+	border-radius: 50%;
+	transition: 0.5s;
+	transform: translateY(200px);
+	opacity: 0;
+}
+.box:hover .socail-icon li a
+{
+	transform: translateY(0px);
+	opacity: 1;
+}
+.box .socail-icon li a .fa
+{
+	transition: 0.5s;
+	font-size: 24px;
+	line-height: 50px;
+}
+.box .socail-icon li a:hover .fa
+{
+	transform: rotateY(360deg);
+}
+.box:hover .socail-icon li:nth-child(1) a
+{
+	transition-delay: 0s;
+}
+.box:hover .socail-icon li:nth-child(2) a
+{
+	transition-delay: 0.2s;
+}
+.box:hover .socail-icon li:nth-child(3) a
+{
+	transition-delay: 0.4s;
+}
+.box:hover .socail-icon li:nth-child(4) a
+{
+	transition-delay: 0.6s;
+}
+.box:hover .socail-icon li:nth-child(5) a
+{
+	transition-delay: 0.8s;
+}
+.details
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	z-index: 4;
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	padding: 10px;
+	z-index: 1;
+}
+.details h2
+{
+	margin: 10px 0 0;
+	padding: 0;
+	text-align: center;
+}
+.details h2 span
+{
+	color: #bbb;
+	font-size: 16px;
+}
+</style>
+<div class="box">
+	<div class="imgBx">
+		<img src="image2.jpg" height="100%">
+	</div>
+	<ul class="socail-icon">
+		<li><a href="https://bit.ly/tanish_codepen"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+		<li><a href="https://bit.ly/tanish_youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+		<li><a href="mailto:tanishvettrivel2010@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+		<li><a href="tel:9750444378"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+		<li><a href="https://bit.ly/tanish_bio-data"><i class="fa fa-asterisk" aria-hidden="true"></i></a></li>
+	</ul>
+	<div class="details">
+		<h2>G V TANISH VETTRIVEL <br><span>HAVE A NICE DAY</span></h2>
+	</div>
+</div>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body
+{
+	background: url(https://i.pinimg.com/originals/d3/86/1f/d3861f41a8aaf68efceb4a8534472e91.jpg?w=1260&amp;h=750&amp;auto=compress&amp;cs=tinysrgb);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container
+{
+	height: 100vh;
+}
+.header
+{
+	justify-content: center;
+	align-items: center;
+}
+.header h1
+{
+	text-align: center;
+	color: #fff;
+	font-family: 'Orbitron', sans-serif;
+}
+.projects__container
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+.project-title-bar 
+{
+    display: block;
+    position: relative;
+    height: 20px;
+    background-color: #ddd;
+    width: 97%;
+    color: #6a6a6a;
+    z-index: 10;
+    margin: auto;
+
+  }
+.project-title-bar h2 
+{
+    content: attr(data-text);
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -.5px;
+    color: #8a8a8a;
+}
+.project-title-bar i, .project-title-bar i:after, .project-title-bar i:before 
+{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: #ff5f57;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+.project-title-bar i:before 
+{
+    content: " ";
+    left: 16px;
+    background-color: #ffbd2e;
+    top: 0;
+}
+.project-title-bar i:after 
+{
+    content: " ";
+    left: 32px;
+    background-color: #28ca41;
+    top: 0;
+}
+.projects__card
+{
+    width: 450px;
+    height: 500px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.05) -1vmin -1vmin 1vmin, rgba(0, 0, 0, 0.4) 1vmin 1vmin 1vmin;
+    justify-content:center;
+    align-items: center;
+}
+.projects__img
+{
+    margin:10px;
+}
+.projects__img img
+{
+    display: block;
+    height: 380px;
+    width: 97%;
+    margin:auto;
+} 
+.projects__title
+{
+    margin: 5px;
+    text-align: center;
+    color: var(--fontcolor);
+}
+.project__link
+{
+    text-decoration: none;
+}
+.projects__footer input
+{
+    margin: auto;   
+    display: block;
+    border-radius: 7px;
+    background-color: grey;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border:0;
+    height: 25px;
+}
