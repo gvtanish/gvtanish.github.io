@@ -4,35 +4,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
-*
-{
+
+* {
   box-sizing: border-box;
 }
-:root
-{
+
+:root {
   --Text: black;
   --Card-backgroud: white;
   --Background: #f1f1f1;
   --themeSwitch: #110c0c;
   --themeSwitch-text: white;
 }
-.dark
-{
+
+.dark {
   --Text: #eee;
   --Card-backgroud: #222;
   --Background: #333;
   --themeSwitch: #eee;
   --themeSwitch-text: black;
 }
-body
-{
+
+body {
   margin: 0;
   padding: 20px;
   background-color: var(--Background);
   color: var(--Text);
+  transition: 0.5s;
 }
-header
-{
+
+header {
   background-color: var(--Card-backgroud);
   padding: 30px;
   margin-bottom: 20px;
@@ -40,74 +41,74 @@ header
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  transition: 0.5s;
 }
-header h1
-{
-  font-family:monospace;
+
+header h1 {
+  font-family: monospace;
   text-align: center;
   font-size: 30px;
   color: var(--Text);
   margin: 1.5 0px;
   margin: 20px;
   font-family: 'Roboto Condensed', sans-serif;
+  transition: 0.5s;
 }
-header h1 span
-{
-  font-family:monospace;
+
+header h1 span {
+  font-family: monospace;
   text-align: center;
   font-size: 30px;
   color: var(--Text);
   margin: 1.5 0px;
 }
 
-.left-column
-{
+.left-column {
   float: left;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
-.right-column
-{
+
+.right-column {
   width: 25%;
   float: right;
   padding-left: 20px;
 }
-.card
-{
+
+.card {
   padding: 20px;
   background-color: var(--Card-backgroud);
+  transition: 0.5s;
 }
-.card h2
-{
+
+.card h2 {
   margin-top: 6px;
   margin-bottom: 10px;
   font-family: 'Azeret Mono', monospace;
 }
-.card h5
-{
+
+.card h5 {
   margin-top: 0px;
   font-family: 'Josefin Sans', sans-serif;
 }
-.card img
-{
+
+.card img {
   width: 100%;
   filter: grayscale(0);
   transition: 0.5s;
 }
-.card img:hover
-{
+
+.card img:hover {
   width: 100%;
   filter: grayscale(0.9);
   border-radius: 2%;
   transform: scale(1.060);
 }
 
-
 /*Dark And light Mode switch*/
-.themeSwitch
-{
+.themeSwitch {
   position: absolute;
   right: 50px;
   width: 30px;
@@ -119,21 +120,24 @@ header h1 span
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
-.themeSwitch::before
-{
+
+.themeSwitch::before {
   content: '\f186';
   font-family: fontawesome;
   color: var(--themeSwitch-text);
+  transition: 0.5s;
 }
-.dark .themeSwitch::before
-{
+
+.dark .themeSwitch::before {
   content: '\f185';
   font-family: fontawesome;
   color: var(--themeSwitch-text);
+  transition: 0.5s;
 }
-.themeSwitch::after
-{
+
+.themeSwitch::after {
   content: 'Switch to Night Mode';
   position: absolute;
   left: 40px;
@@ -144,9 +148,8 @@ header h1 span
   font-weight: 300;
   letter-spacing: 1px;
 }
-.dark
-.themeSwitch::after
-{
+
+.dark .themeSwitch::after {
   content: 'Switch to Day Mode';
   position: absolute;
   left: 40px;
@@ -157,126 +160,116 @@ header h1 span
   font-weight: 300;
   letter-spacing: 1px;
 }
-.themeSwitch.mobile
-{
+
+.themeSwitch.mobile {
   visibility: hidden;
 }
-.skeleton
-{
+
+.skeleton {
   animation: skeleton-loading 1s linear infinite alternate;
 }
-@keyframes skeleton-loading
-{
-  0%
-  {
+
+@keyframes skeleton-loading {
+  0% {
     background-color: hsl(200, 20%, 70%);
   }
-  100%
-  {
+
+  100% {
     background-color: hsl(200, 20%, 95%);
   }
 }
 
-
-
-
 /* Now, Make is responsive */
-
-
 /* Mobile */
-
-@media (max-width: 425px)
-{
-  .left-column
-  {
-    grid-template-columns: repeat(1,1fr);
+@media (max-width: 425px) {
+  .left-column {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .themeSwitch
-  {
+
+  .themeSwitch {
     visibility: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
-
 /* Mobile To Tablet */
-
-@media (min-width: 425px)
-{
-  .left-column
-  {
-    grid-template-columns: repeat(1,1fr);
+@media (min-width: 425px) {
+  .left-column {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .themeSwitch
-  {
+
+  .themeSwitch {
     visibility: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
 /* themeSwitch For Tablet */
-
-@media (min-width: 600px)
-{
-  .themeSwitch
-  {
+@media (min-width: 600px) {
+  .themeSwitch {
     visibility: visible;
   }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 /* Tablet */
-
-@media (min-width: 768px)
-{
-  .left-column
-  {
+@media (min-width: 768px) {
+  .left-column {
     float: left;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-  .themeSwitch
-  {
+
+  .themeSwitch {
     visibility: visible;
   }
 }
 
-
 /* Laptop Min */
-
-@media (min-width: 1230px)
-{
-  .left-column
-  {
+@media (min-width: 1230px) {
+  .left-column {
     float: left;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
-  .themeSwitch.mobile
-  {
+
+  .themeSwitch.mobile {
     visibility: hidden;
   }
 }
 
-
 /* Laptop Large */
-
-@media (min-width: 1440px)
-{
-  .left-column
-  {
-    grid-template-columns: repeat(4,1fr);
+@media (min-width: 1440px) {
+  .left-column {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-
 /* Laptop Max */
-
-@media (min-width: 2560px)
-{
-  .left-column
-  {
-    grid-template-columns: repeat(5,1fr);
+@media (min-width: 2560px) {
+  .left-column {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
