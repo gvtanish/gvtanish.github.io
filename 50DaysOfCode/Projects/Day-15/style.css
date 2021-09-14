@@ -76,6 +76,7 @@
   max-width: 200px;
   z-index: 10;
   animation: car1 18s linear infinite;
+  cursor: progress;
 }
 @keyframes car1
 {
