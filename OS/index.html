@@ -101,7 +101,18 @@
 				<p id="name">Chat</p>
 			</div>
 
-
+			<div
+				title="Minecraft"
+				class="desktop-item draggable"
+				ondblclick="$('#tab-mc').show(); $('.desktop-item').css('background-color','transparent');"
+				onmouseover="hoveredItem(this)"
+				onmouseout="hoveredOut(this)"
+				onclick="selectedItem(this)"
+        draggable="true"
+			>
+				<img src="img/mc.png" alt="Minecraft" />
+				<p>Minecraft</p>
+			</div>
 
 			<div
 				title="Dino Game"
@@ -126,18 +137,7 @@
 				<img src="img/Gooey.png" alt="Gooey" />
 				<p>Gooey Game</p>
 			</div>
-			<div
-				title="Minecraft"
-				class="desktop-item draggable"
-				ondblclick="$('#tab-mc').show(); $('.desktop-item').css('background-color','transparent');"
-				onmouseover="hoveredItem(this)"
-				onmouseout="hoveredOut(this)"
-				onclick="selectedItem(this)"
-        draggable="true"
-			>
-				<img src="img/mc.png" alt="Minecraft" />
-				<p>Minecraft</p>
-			</div>
+			
 
 		</div>
 
