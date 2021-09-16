@@ -377,17 +377,15 @@ body {
 	background-attachment: fixed;
 	height: 100%;
 	width: 100%;
-
 }
 
 #main .desktop-item {
 	padding: 10px;
 	height: auto;
 	margin-bottom: 10px;
-	width: 85px;
+	width: 100px;
 	text-align: center;
 	border-radius: 5px;
-
 }
 
 #main .desktop-item:hover {
@@ -412,7 +410,11 @@ body {
 #tab-todo,
 #tab-clock,
 #tab-dino,
-#tab-gooey {
+#tab-gooey,
+#tab-mc,
+#tab-games,
+#tab-todo
+{
 	display: none;
 	position: absolute;
 	top: 45px;
@@ -421,6 +423,7 @@ body {
 	background-color: #111;
 	width: 60%;
 	height: 70%;
+  border: none;
 	padding: 50px 5px 40px 5px;
 	font-size: 0.8em;
 	resize: both;
@@ -434,7 +437,7 @@ body {
 	top: 0;
 	right: 0;
 	padding: 10px 5px;
-	/* cursor: move; */
+	cursor: move;
 	z-index: 12;
 	background-color: #111;
 	color: #fff;
@@ -470,7 +473,6 @@ body {
 	right: 0;
 	bottom:0;
 	z-index: 9;
-
 	color: rgb(0, 0, 0);
 }
 
@@ -506,6 +508,7 @@ body {
     width: 100%;
     height: 94.2%;
     border: 0;
+
 }
 
 
@@ -545,7 +548,42 @@ body {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
+}
+
+/* -------------------------
+Bottom StartBar Part ...
+---------------------------*/
+
+#startBar {
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+	right: 0;
+	height: 40px;
+	width: 100%;
+	background: black;
+}
+
+/* Windows icon on the left side */
+#startBar .win-icon {
+	position: absolute;
+	height: 100%;
+	width: 45px;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0) url('img/icon_windows.png') no-repeat;
+	background-size: 30px;
+	background-position: 10px;
+	opacity: 1;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+#startBar .win-icon:hover {
+	opacity: 1;
+	background: rgb(0, 59, 59) url('img/icon_windows.png') no-repeat;
+	background-size: 28px;
+	background-position: 10px;
 }
 
 /* -------------------------

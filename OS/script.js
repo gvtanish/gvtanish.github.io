@@ -102,6 +102,14 @@ dragElement(
 	document.getElementById('tab-gooey'),
 	document.getElementById('tab-gooey-header')
 );
+dragElement(
+	document.getElementById('tab-mc'),
+	document.getElementById('tab-mc-header')
+);
+dragElement(
+	document.getElementById('tab-todo'),
+	document.getElementById('tab-todo-header')
+);
 
 function dragElement(elmnt, eH) {
 	var pos1 = 0,

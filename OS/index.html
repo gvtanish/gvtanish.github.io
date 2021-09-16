@@ -10,9 +10,7 @@
 			rel="stylesheet"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css?family=Oxygen+Mono"
-			rel="stylesheet"
-		/>
+			href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"/>
 		<link
 			href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500"
 			rel="stylesheet"
@@ -61,7 +59,6 @@
 				<img src="img/this-pc.png" alt="This PC" />
 				<p id="name">This PC</p>
 			</div>
-
 		<!-- Clock App -->
 
 		<div
@@ -104,7 +101,7 @@
 				<p id="name">Chat</p>
 			</div>
 
-			<!-- Games -->
+
 
 			<div
 				title="Dino Game"
@@ -128,6 +125,18 @@
 			>
 				<img src="img/Gooey.png" alt="Gooey" />
 				<p>Gooey Game</p>
+			</div>
+			<div
+				title="Minecraft"
+				class="desktop-item draggable"
+				ondblclick="$('#tab-mc').show(); $('.desktop-item').css('background-color','transparent');"
+				onmouseover="hoveredItem(this)"
+				onmouseout="hoveredOut(this)"
+				onclick="selectedItem(this)"
+        draggable="true"
+			>
+				<img src="img/mc.png" alt="Minecraft" />
+				<p>Minecraft</p>
 			</div>
 
 		</div>
@@ -171,7 +180,6 @@
 				9 folders, 5 files, 5.00 MBss
 			</div>
 		</div>
-
 		<!-- Clock Tab -->
 
 		<div id="tab-clock">
@@ -180,7 +188,7 @@
 				<i class="fa fa-times" onclick="$('#tab-clock').hide(); cls();"></i>
 			</div>
 				<div class="tab-middle-chats2" >
-				<iframe class="resp2-iframe" src="html/clock.html" style="height: 500px;"></iframe>
+				<iframe class="resp2-iframe" src="html/clock.html" style="height: 100%;"></iframe>
 				</div>
 			</div>
 
@@ -189,7 +197,7 @@
 
 
 
-		<div id="tab-calc">
+		<div id="tab-calc" style="border:none;">
 			<div id="tab-calc-header" class="tab-header">
 				Calculator
 				<i class="fa fa-times" onclick="$('#tab-calc').hide(); cls();"></i>
@@ -230,6 +238,16 @@
 			</div>
 			<div class="tab-middle-chats2" >
 				<iframe class="resp2-iframe" src="https://gvtanish.github.io/Projects/Gooey-2/"></iframe>
+			</div>
+		</div>
+
+		<div id="tab-mc">
+			<div id="tab-mc-header" class="tab-header">
+				Minecraft
+				<i class="fa fa-times" onclick="$('#tab-mc').hide(); cls();"></i>
+			</div>
+			<div class="tab-middle-chats2" >
+				<iframe src="https://www.crazygames.com/embed/minecraft-classic" style="width: 100%; height: 100%;" frameborder="0"></iframe>
 			</div>
 		</div>
 
@@ -275,7 +293,7 @@
 				</li>
 
 			</ul>
-		</div>
+		</div
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="script.js"></script>

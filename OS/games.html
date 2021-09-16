@@ -1,0 +1,249 @@
+<div class="row">
+        <div class="left-column">
+          <div
+    				title="Gooey Game"
+    				class="desktop-item draggable"
+    				ondblclick="$('#tab-gooey').show(); $('.desktop-item').css('background-color','transparent');"
+    				onmouseover="hoveredItem(this)"
+    				onmouseout="hoveredOut(this)"
+    				onclick="selectedItem(this)"
+            draggable="true"
+    			>
+          <div class="card">
+            <h2>Gooey</h2>
+              <img src="img\gooey.png" alt="Project Tumbnail" class="skeleton">
+          </div>
+        </div>
+        <div
+          title="Dino Game"
+          class="desktop-item"
+          ondblclick="$('#tab-dino').show(); $('.desktop-item').css('background-color','transparent');"
+          onmouseover="hoveredItem(this)"
+          onmouseout="hoveredOut(this)"
+          onclick="selectedItem(this)"
+        >
+          <div class="card">
+            <h2>Dino</h2>
+            <a href="Projects\Day-2\index.html">
+              <img src="img\dino.png" alt="Project Tumbnail">
+            </a>
+          </div>
+        </div>
+        <div
+  				title="Minecraft"
+  				class="desktop-item draggable"
+  				ondblclick="$('#tab-mc').show(); $('.desktop-item').css('background-color','transparent');"
+  				onmouseover="hoveredItem(this)"
+  				onmouseout="hoveredOut(this)"
+  				onclick="selectedItem(this)"
+          draggable="true"
+  			>
+          <div class="card">
+            <h2>Minecraft</h2>
+            <a href="Projects\Day-3\index.html">
+              <img src="img\mc.png" alt="Project Tumbnail">
+            </a>
+          </div>
+        </div>
+</div>
+
+		<!-- Games -->
+		<div id="tab-dino">
+			<div id="tab-dino-header" class="tab-header">
+				Dino Game
+				<i class="fa fa-times" onclick="$('#tab-dino').hide(); cls();"></i>
+			</div>
+			<div class="tab-middle-chats2" >
+				<iframe src="https://chromedino.com/" class="resp2-iframe" frameborder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe>
+			</div>
+		</div>
+
+		<div id="tab-gooey">
+			<div id="tab-gooey-header" class="tab-header">
+				Gooey Game
+				<i class="fa fa-times" onclick="$('#tab-gooey').hide(); cls();"></i>
+			</div>
+			<div class="tab-middle-chats2" >
+				<iframe class="resp2-iframe" src="https://gvtanish.github.io/Projects/Gooey-2/"></iframe>
+			</div>
+		</div>
+
+		<div id="tab-mc">
+			<div id="tab-mc-header" class="tab-header">
+				Minecraft
+				<i class="fa fa-times" onclick="$('#tab-mc').hide(); cls();"></i>
+			</div>
+			<div class="tab-middle-chats2" >
+				<iframe src="https://www.crazygames.com/embed/minecraft-classic" style="width: 100%; height: 100%;" frameborder="0"></iframe>
+			</div>
+		</div>
+<style media="screen">
+  @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Text: black;
+  --Card-backgroud: white;
+  --Background: #f1f1f1;
+  --themeSwitch: #110c0c;
+  --themeSwitch-text: white;
+}
+
+.dark {
+  --Text: #eee;
+  --Card-backgroud: #222;
+  --Background: #333;
+  --themeSwitch: #eee;
+  --themeSwitch-text: black;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: var(--Background);
+  color: var(--Text);
+  transition: 0.5s;
+}
+
+header {
+  background-color: var(--Card-backgroud);
+  padding: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: 0.5s;
+}
+
+header h1 {
+  font-family: monospace;
+  text-align: center;
+  font-size: 30px;
+  color: var(--Text);
+  margin: 1.5 0px;
+  margin: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: 0.5s;
+}
+
+header h1 span {
+  font-family: monospace;
+  text-align: center;
+  font-size: 30px;
+  color: var(--Text);
+  margin: 1.5 0px;
+}
+
+.left-column {
+  float: left;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.right-column {
+  width: 25%;
+  float: right;
+  padding-left: 20px;
+}
+
+.card {
+  padding: 20px;
+  background-color: var(--Card-backgroud);
+  transition: 0.5s;
+}
+
+.card h2 {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-family: 'Azeret Mono', monospace;
+}
+
+.card h5 {
+  margin-top: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.card img {
+  width: 100%;
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.card img:hover {
+  width: 100%;
+  filter: grayscale(0.9);
+  border-radius: 2%;
+  transform: scale(1.060);
+}
+
+/*Dark And light Mode switch*/
+.themeSwitch {
+  position: absolute;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  margin: 120px;
+  background: var(--themeSwitch);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.themeSwitch::before {
+  content: '\f186';
+  font-family: fontawesome;
+  color: var(--themeSwitch-text);
+  transition: 0.5s;
+}
+
+.dark .themeSwitch::before {
+  content: '\f185';
+  font-family: fontawesome;
+  color: var(--themeSwitch-text);
+  transition: 0.5s;
+}
+
+.themeSwitch::after {
+  content: 'Switch to Night Mode';
+  position: absolute;
+  left: 40px;
+  font-size: 0.7em;
+  color: var(--text);
+  font-family: 'Bebas Neue', cursive;
+  white-space: nowrap;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.dark .themeSwitch::after {
+  content: 'Switch to Day Mode';
+  position: absolute;
+  left: 40px;
+  font-size: 0.7em;
+  color: var(--text);
+  font-family: 'Bebas Neue', cursive;
+  white-space: nowrap;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.themeSwitch.mobile {
+  visibility: hidden;
+}
+
+</style>
+<script src="script.js"></script>
