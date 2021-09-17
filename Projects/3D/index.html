@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  </head>
+  <body>
+    <div class="demo">
+      <model-viewer id="model" src="Robot.glb" skybox-image="Stadium.hdr" auto-rotate camera-controls animation-name="Running" autoplay ar></model-viewer>
 
+      <div class="btncontainer">
+        <button class="button" onclick="stop()">Stop</button>
+        <button class="button" onclick="run()">Run</button>
+        <button class="button" onclick="wave()">Wave</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
