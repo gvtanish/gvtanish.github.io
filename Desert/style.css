@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Text: black;
+  --Card-backgroud: white;
+  --Background: #f1f1f1;
+  --themeSwitch: #110c0c;
+  --themeSwitch-text: white;
+}
+
+.dark {
+  --Text: #eee;
+  --Card-backgroud: #222;
+  --Background: #333;
+  --themeSwitch: #eee;
+  --themeSwitch-text: black;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: var(--Background);
+  color: var(--Text);
+  transition: 0.5s;
+}
+
+header {
+  background-color: var(--Card-backgroud);
+  padding: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  transition: 0.5s;
+}
+
+header h1 {
+  font-family: monospace;
+  text-align: center;
+  font-size: 25px;
+  color: var(--Text);
+  margin: 1.5 0px;
+  margin: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: 0.5s;
+}
+
+header h1 span {
+  font-family: monospace;
+  text-align: center;
+  font-size: 30px;
+  color: var(--Text);
+  margin: 1.5 0px;
+}
+
+.left-column {
+  width: 100%;
+  grid-gap: 20px;
+}
+
+.right-column {
+  width: 25%;
+  float: right;
+  padding-left: 20px;
+}
+
+.card {
+  padding: 20px;
+  background-color: var(--Card-backgroud);
+  transition: 0.5s;
+}
+
+.card h2 {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-family: 'Azeret Mono', monospace;
+}
+
+.card h1 {
+font-family: 'Azeret Mono', monospace;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4em;
+  font-weight: 700 italic;
+}
+.card p,li {
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.1em
+}
+.card li small {
+  margin-top: 5px;
+  margin-right: 500px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0
+}
+.card img {
+  width: 70%;
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.card img:hover {
+  filter: grayscale(0.9);
+  border-radius: 2%;
+  transform: scale(1.060);
+}
+/*Dark And light Mode switch*/
+.themeSwitch {
+  position: absolute;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  margin: 120px;
+  background: var(--themeSwitch);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.themeSwitch::before {
+  content: '\f186';
+  font-family: fontawesome;
+  color: var(--themeSwitch-text);
+  transition: 0.5s;
+}
+
+.dark .themeSwitch::before {
+  content: '\f185';
+  font-family: fontawesome;
+  color: var(--themeSwitch-text);
+  transition: 0.5s;
+}
+
+.themeSwitch::after {
+  content: 'Switch to Night Mode';
+  position: absolute;
+  left: 40px;
+  font-size: 0.7em;
+  color: var(--text);
+  font-family: 'Bebas Neue', cursive;
+  white-space: nowrap;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.dark .themeSwitch::after {
+  content: 'Switch to Day Mode';
+  position: absolute;
+  left: 40px;
+  font-size: 0.7em;
+  color: var(--text);
+  font-family: 'Bebas Neue', cursive;
+  white-space: nowrap;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.themeSwitch.mobile {
+  visibility: hidden;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+/* Now, Make is responsive */
+/* Mobile */
+@media (max-width: 425px) {
+
+  .themeSwitch {
+    visibility: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .card img {
+    width: 100%;
+    filter: grayscale(0);
+    transition: 0.5s;
+  }
+}
+
+/* Mobile To Tablet */
+@media (min-width: 425px) {
+  .themeSwitch {
+    visibility: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .card img {
+    width: 100%;
+    filter: grayscale(0);
+    transition: 0.5s;
+  }
+}
+
+/* themeSwitch For Tablet */
+@media (min-width: 600px) {
+  .themeSwitch {
+    visibility: visible;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .card img {
+    width: 70%;
+    filter: grayscale(0);
+    transition: 0.5s;
+  }
+}
+
+
+
+/* Tablet */
+@media (min-width: 768px) {
+  .themeSwitch {
+    visibility: visible;
+  }
+}
+
+/* Laptop Min */
+@media (min-width: 1230px) {
+  .themeSwitch.mobile {
+    visibility: hidden;
+  }
+}
+
+/* Laptop Max */
+@media (min-width: 2560px) {
+.card h1
+{
+
+}
+h2
+{
+  font-family: 'Open Sans', sans-serif;
+}
