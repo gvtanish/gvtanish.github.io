@@ -20,16 +20,16 @@ const PROJECTS: {
   link: string;
 }[] = [
   {
-    title: "SePP",
-    desc: "AI-powered LMS/DLMS for KVS schools with dashboards, XP/badges and leaderboards — India's first student-centric KVS DLMS, launched 29 July 2026 at PM SHRI KV Sulur's library.",
-    stack: ["React", "Supabase", "AI", "Dashboards"],
+    title: "DLMS",
+    desc: "AI-powered DLMS for KVS schools with dashboards, XP/badges and leaderboards — India's first student-centric KVS DLMS, launched 29 July 2026 at PM SHRI KV Sulur's library.",
+    stack: ["React", "Supabase", "Dashboards"],
     status: "LIVE",
     link: "[ADD GITHUB REPO LINK]",
   },
   {
     title: "School Election Voting System",
     desc: "Election platform for ~1,650 students with polling agent roster, booth allotment and Google Cloud TTS voiceovers.",
-    stack: ["Lovable", "Supabase", "Google Cloud TTS"],
+    stack: ["React", "Supabase", "Google Cloud TTS"],
     status: "LIVE",
     link: "[ADD GITHUB REPO LINK]",
   },
@@ -51,13 +51,6 @@ const PROJECTS: {
     title: "PhytoSonic Index",
     desc: "NCSC 2026-27 proposal using IoT soundscape ecology to index plant and habitat health.",
     stack: ["IoT", "Sensors", "Data analysis"],
-    status: "PROPOSAL",
-    link: "[ADD PROPOSAL LINK]",
-  },
-  {
-    title: "School Traffic Safety Proposal",
-    desc: "Data-driven proposal led as Vice Captain covering bus stop placement, crossings and rumble strips.",
-    stack: ["Field data", "Spreadsheets", "Systems thinking"],
     status: "PROPOSAL",
     link: "[ADD PROPOSAL LINK]",
   },

@@ -6,9 +6,9 @@ import { About, Projects } from "@/components/portfolio/projects";
 import { Achievements, Skills } from "@/components/portfolio/achievements";
 import { Contact, Footer } from "@/components/portfolio/contact";
 
-const TITLE = "Tanish | Student Developer & Tech Leader from Coimbatore";
+const TITLE = "G V Tanish Vettrivel | Full Stack Developer from Coimbatore";
 const DESCRIPTION =
-  "Class 11 student developer from Coimbatore building rocket avionics, IoT sensor systems, a KVS learning platform and a school election system.";
+  "Class 11 student developer from PM SHRI KV  SULUR Coimbatore building full-stack applications.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
             addressRegion: "Tamil Nadu",
             addressCountry: "IN",
           },
-          affiliation: { "@type": "EducationalOrganization", name: "PM SHRI KV AFS Sulur" },
+          affiliation: { "@type": "EducationalOrganization", name: "PM SHRI KV SULUR" },
           knowsAbout: ["React", "Supabase", "Arduino", "Avionics", "IoT", "CAD"],
         }),
       },

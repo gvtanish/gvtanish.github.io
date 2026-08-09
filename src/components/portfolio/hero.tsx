@@ -66,9 +66,9 @@ export function Hero() {
             className="mt-5 text-4xl leading-[1.05] font-semibold tracking-tight sm:text-6xl"
             {...rise(0.2)}
           >
-            Tanish
-            <span className="block text-primary">Student Developer</span>
-            <span className="block text-muted-foreground">&amp; Tech Leader</span>
+            G V
+            <span className="block text-primary">Tanish</span>
+            <span className="block text-muted-foreground">&amp; Vettrivel</span>
           </motion.h1>
 
           {/* Telemetry line */}
@@ -81,9 +81,7 @@ export function Hero() {
           </div>
 
           <motion.p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground" {...rise(0.3)}>
-            Class 11 student in Coimbatore building rocket avionics, IoT sensor systems and
-            school-scale software — from a KVS learning platform to an election system for 1,650
-            students.
+            Class 11 student in PM SHRI KENDRIYA VIDYALAYA SULUR, Elected ASPL for the Year 2026 — a full stack developr giving software solutions.
           </motion.p>
 
           <motion.div className="mt-8 flex flex-wrap gap-3" {...rise(0.4)}>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Reveal } from "./section";
 
-const EMAIL = "tanish@example.com"; // [ADD EMAIL ADDRESS]
+const EMAIL = "tanishvettrivel2010@gmail.com"; // [ADD EMAIL ADDRESS]
 
 export function Contact() {
   const [subject, setSubject] = useState("");

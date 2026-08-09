@@ -2,17 +2,22 @@ import { motion } from "motion/react";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 const ITEMS = [
+  
   {
-    title: "Bharat Innovates 2026",
-    detail: "Selected through the KRITI programme for national innovation showcase.",
+    title: "ISRO Young Scientist Awardee 2025",
+    detail: "ISRO Yuvika Young Scientist Award for the year 2025.",
   },
   {
-    title: "iKITES Internship — IIT Kharagpur",
+    title: "Launched DLMS",
+    detail: "India's First Student Centric KVS DLMS for KV Sulur.",
+  },
+  {
+    title: "BSG Rajyapuraskar Awardee",
+    detail: "Bharat Scouts and Guides Rajyapuraskar award; earned through service, leadership, and skill development.",
+  },
+  {
+    title: "KRITI iKITES Internship — IIT Kharagpur",
     detail: "Research internship covering avionics, sensing and systems design.",
-  },
-  {
-    title: "KRITI 2026 Programme",
-    detail: "Sounding rocket avionics payload team; presented at PRAVAH 2026.",
   },
   {
     title: "Elected Vice Captain",
@@ -23,8 +28,8 @@ const ITEMS = [
     detail: "Strong overall performance across all subjects.",
   },
   {
-    title: "Citadel Hackathon Submission",
-    detail: "Submitted SePP, the student-centric KVS learning platform.",
+    title: "AI Vidyasetu 1.0",
+    detail: "Participated in the AI Vidyasetu 1.0 Hackathon, and secured Zonal Runner-up and qualified for NATIONALS.",
   },
 ];
 
