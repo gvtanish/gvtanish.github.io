@@ -1,24 +1,76 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/portfolio/nav";
+import { Hero } from "@/components/portfolio/hero";
+import { Section } from "@/components/portfolio/section";
+import { About, Projects } from "@/components/portfolio/projects";
+import { Achievements, Skills } from "@/components/portfolio/achievements";
+import { Contact, Footer } from "@/components/portfolio/contact";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const TITLE = "Tanish | Student Developer & Tech Leader from Coimbatore";
+const DESCRIPTION =
+  "Class 11 student developer from Coimbatore building rocket avionics, IoT sensor systems, a KVS learning platform and a school election system.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://gvtanish.github.io/" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: TITLE },
+      { name: "twitter:description", content: DESCRIPTION },
+    ],
+    links: [{ rel: "canonical", href: "https://gvtanish.github.io/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Tanish",
+          jobTitle: "Student Developer",
+          url: "https://gvtanish.github.io/",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Coimbatore",
+            addressRegion: "Tamil Nadu",
+            addressCountry: "IN",
+          },
+          affiliation: { "@type": "EducationalOrganization", name: "PM SHRI KV AFS Sulur" },
+          knowsAbout: ["React", "Supabase", "Arduino", "Avionics", "IoT", "CAD"],
+        }),
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Nav />
+      <main>
+        <Hero />
+        <Section id="about" index="01" title="About">
+          <About />
+        </Section>
+        <Section id="projects" index="02" title="Projects">
+          <Projects />
+        </Section>
+        <Section id="achievements" index="03" title="Achievements">
+          <Achievements />
+        </Section>
+        <Section id="skills" index="04" title="Skills">
+          <Skills />
+        </Section>
+        <Section id="contact" index="05" title="Contact">
+          <Contact />
+        </Section>
+      </main>
+      <Footer />
     </div>
   );
 }
