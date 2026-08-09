@@ -68,7 +68,7 @@ export function Hero() {
           >
             G V
             <span className="block text-primary">Tanish</span>
-            <span className="block text-muted-foreground">&amp; Vettrivel</span>
+            <span className="block text-muted-foreground"> Vettrivel</span>
           </motion.h1>
 
           {/* Telemetry line */}
@@ -116,7 +116,7 @@ export function Hero() {
             />
             <CornerBrackets />
           </motion.div>
-          <p className="label-mono mt-3 text-center">Operator: Tanish // Status: Active</p>
+          <p className="label-mono mt-3 text-center">Portfolio cum Resume Site</p>
         </motion.div>
       </div>
 

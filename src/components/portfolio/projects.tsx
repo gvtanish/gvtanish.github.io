@@ -104,7 +104,7 @@ export function Projects() {
 
 export function About() {
   const facts = [
-    ["Role", "Student developer, Vice Captain"],
+    ["Role", "Student, Vice Captain, Full Stack Developer"],
     ["School", "PM SHRI KV AFS Sulur, Coimbatore"],
     ["Focus", "Avionics, IoT, full-stack web, JEE prep"],
     ["Location", "Coimbatore, Tamil Nadu, India"],
@@ -114,12 +114,10 @@ export function About() {
     <div className="grid gap-10 md:grid-cols-2">
       <Reveal>
         <p className="text-sm leading-relaxed text-muted-foreground">
-          I'm Tanish, a Class 11 student at PM SHRI KV AFS Sulur in Coimbatore, balancing JEE
+          I'm G V Tanish Vettrivel, a Class 11 student at PM SHRI KV AFS Sulur in Coimbatore, balancing JEE
           preparation with hands-on engineering. As school Vice Captain I turn observations into
-          proposals; as a builder I ship real systems — an avionics payload through IIT Kharagpur's
-          iKITES internship and KRITI programme, an election platform used by my whole school, and a
-          learning platform for KVS students. I'm currently deepening full-stack development through
-          PW Earners.
+          proposals; as a builder I ship real systems — India's First Student Centric DLMS through KV SULUR.
+          and iKITES internship and ISRO Young Scientist Awardee 2025, an election platform used by my various KV school.
         </p>
       </Reveal>
       <Reveal delay={0.1}>

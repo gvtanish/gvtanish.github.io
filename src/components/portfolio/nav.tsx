@@ -40,7 +40,7 @@ export function Nav() {
           className="label-mono flex items-center gap-2 text-foreground transition-colors duration-150 hover:text-primary"
         >
           <span className="inline-flex size-7 items-center justify-center border border-primary text-primary">
-            GT
+            @gvtanish
           </span>
           <span className="hidden sm:inline">Tanish</span>
         </a>

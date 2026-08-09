@@ -74,8 +74,8 @@ export function Achievements() {
 
 const CLUSTERS = [
   { label: "Web dev", items: ["HTML / CSS / JS", "React", "Supabase", "Tailwind"] },
-  { label: "Hardware / IoT", items: ["Arduino", "BMP280", "MPU-6050", "OpenSCAD / CAD", "Sensor fusion"] },
-  { label: "Tools", items: ["Google Cloud TTS", "Lovable", "Spreadsheets / data", "Git"] },
+  { label: "Hardware / IoT", items: ["Arduino", "Raspberry", "ESP", "OpenSCAD / CAD", "Sensor fusion"] },
+  { label: "Tools", items: ["Google Cloud TTS", "AI Prompting", "Spreadsheets / data", "Git"] },
 ];
 
 export function Skills() {
