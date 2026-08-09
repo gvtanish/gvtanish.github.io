@@ -33,7 +33,14 @@ jobs:
         run: bun install
 
       - name: Build static SPA
-        run: bun run build
+        # Uses vite.static.config.ts — bypasses Nitro/SSR entirely.
+        # Outputs a pure client bundle to ./dist
+        run: bun run build:static
+
+      - name: Copy index.html → 404.html for SPA routing
+        # GitHub Pages serves 404.html for unknown paths.
+        # This lets the TanStack Router client-side router take over.
+        run: cp ./dist/index.html ./dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
