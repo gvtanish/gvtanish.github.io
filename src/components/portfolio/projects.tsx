@@ -82,8 +82,8 @@ export function Projects() {
             show: { opacity: 1, y: 0 },
           }}
           transition={{ duration: reduced ? 0.01 : 0.45 }}
-          whileHover={reduced ? undefined : { y: -4 }}
-          whileTap={reduced ? undefined : { y: -4 }}
+          {...(reduced ? {} : { whileHover: { y: -4 }, whileTap: { y: -4 } })}
+
           className="group flex flex-col border border-border bg-surface p-5 transition-shadow duration-200 hover:glow-amber"
         >
           <div className="flex items-start justify-between gap-3">
