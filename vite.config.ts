@@ -8,8 +8,11 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
-    server: { entry: "server" },
+    // SPA mode: skip Nitro/SSR bundling entirely and output a pure
+    // static client bundle. This is required for GitHub Pages hosting
+    // and also fixes the Vite 8 / Rolldown SSR-entry incompatibility.
+    spa: {
+      enabled: true,
+    },
   },
 });
