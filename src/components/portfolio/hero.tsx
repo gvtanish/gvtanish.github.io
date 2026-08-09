@@ -81,7 +81,7 @@ export function Hero() {
           </div>
 
           <motion.p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground" {...rise(0.3)}>
-            Class 11 student in PM SHRI KENDRIYA VIDYALAYA SULUR, Elected ASPL for the Year 2026 — a full stack developr giving software solutions.
+            Class 11 student in PM SHRI KENDRIYA VIDYALAYA SULUR, Elected ASPL for the Year 2026 — a full stack developer giving software solutions.
           </motion.p>
 
           <motion.div className="mt-8 flex flex-wrap gap-3" {...rise(0.4)}>
